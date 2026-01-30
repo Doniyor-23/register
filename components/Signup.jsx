@@ -34,24 +34,31 @@ const Signup = () => {
   return (
     <>
     <div>
+        <select className='px-3 py-2 w-[80%] border rounded-lg' name="" id="">
+            <option className='rounded-md p-2' value="">Category of question</option>
+            <option className='rounded-md p-2' value="">Category of question</option>
+            <option  className='rounded-md p-2'value="">Category of question</option>
+        </select>
         <form onSubmit={handleSubmit}>
-
+            <h2 className='font-semibold mt-2'>Name</h2>
             <input id='name' 
-            className='border w-110 border-gray-500 px-3 py-2 rounded-lg' 
+            className='border w-[80%] border-gray-500 px-3 py-2 rounded-lg' 
             value={name}
             onChange={(e) => setName(e.target.value)}
             type="text" 
             placeholder='e.g Sepide Moqadasi'/>
 
+            <h2 className='font-semibold mt-2'>Email address</h2>
             <input id='mail' 
-            className='border w-110 border-gray-500 mt-2 mb-2 px-3 py-2 rounded-lg' 
+            className='border w-[80%] border-gray-500  px-3 py-2 rounded-lg' 
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             type="email" 
-            placeholder='e.g sepide.moqadasi@gmai.com'/>
+            placeholder='e.g sepide.moqadasi@gmail.com'/>
 
+            <h2 className='font-semibold mt-2'>Your Message</h2>
             <textarea id="comment"
-            className='border w-110 border-gray-500 px-3 py-2 rounded-lg' 
+            className='border w-[80%] border-gray-500 px-3 py-2 rounded-lg' 
             value={comment}
             onChange={(e) => setComment(e.target.value)}
             placeholder='Let us know how we can help' >
