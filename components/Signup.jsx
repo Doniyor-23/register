@@ -64,10 +64,10 @@ const Signup = () => {
             placeholder='Let us know how we can help' >
             </textarea>
 
-            <div className='flex justify-center ml-33 mt-2'>
+            <div className=''>
                 <button type='submit' 
-                className='flex items-center w-20 gap-2 border border-gray-500 px-2 py-1 rounded-lg bg-blue-800 text-white '
-                >Send <LuSendHorizontal /></button>
+                className='flex items-center justify-center w-[80%] gap-2 border border-gray-500 px-2 py-1 rounded-lg bg-green-700 text-white '
+                >Submit your message <LuSendHorizontal /></button>
             </div>
         </form>
     </div>
